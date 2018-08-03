@@ -5,54 +5,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lamit</title>
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 	<!-- Bootstrap CSS -->
-	
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<style type="text/css" media="screen">
-	/* 小於785menu變下拉式 */ 
-		 @media (max-width:785px){	
-			.menu{display:none;}
-			.nav_img{position: relative;
-			width: 40px;height: 40px;
-			background-image: url(img/menu.png);
-			background-size: cover;
-			margin-left:80% ;
-			margin-top:10px 
-		}
-		.nav_img > li:hover{
-			background-color: #FAF5B7;}
-		.nav_img > li{
-			display: inline-block;
-		}
-			.dropdown{
-			position: absolute;
-			width: 200%;
-			background-color: #FAF5B7;
-			text-align: center;
-			border-radius: 4px;
-			display: none;
-			z-index: 999999999;
-		}
-	
 
-		.nav_img > li:hover{
-			background-color:black;}
-		.nav_img > li:hover > .dropdown{
-			display: block;
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css" media="screen">
+		/* 小於785menu變下拉式 */
+
+		@media (max-width:785px) {
+			.menu {
+				display: none;
+			}
+			.nav_img {
+				position: relative;
+				width: 40px;
+				height: 40px;
+				background-image: url(img/menu.png);
+				background-size: cover;
+				margin-left: 80%;
+				margin-top: 10px
+			}
+			.nav_img>li:hover {
+				background-color: #FAF5B7;
+			}
+			.nav_img>li {
+				display: inline-block;
+			}
+			.dropdown {
+				position: absolute;
+				width: 200%;
+				background-color: #FAF5B7;
+				text-align: center;
+				border-radius: 4px;
+				display: none;
+				z-index: 999999999;
+			}
+
+
+			.nav_img>li:hover {
+				background-color: #FAF5B7;
+			}
+			.nav_img>li:hover>.dropdown {
+				display: block;
+			}
 		}
-	}
-	
-	
-			/* 767內會改產品介紹頁面 */
-		@media (max-width:767px){
-			/* .product{
-			
-			height: 900px;
-			
-		} */
-		}
+
+
 
 		body {
 			margin: 0
@@ -69,26 +68,29 @@
 			
 		} */
 
-		.nav {position: fixed;
+		.nav {
+			position: fixed;
 			position: relative;
-			
-			height: 70px;	
+
+			height: 70px;
 			background-color: #FAF5B7;
 			text-align: center;
 			padding-top: 0px;
 			margin-top: 20px;
-			border-top: 10px solid #F0E5AF;	
+			border-top: 10px solid #F0E5AF;
 		}
-		.menu{
+
+		.menu {
 			position: absolute;
 			left: 15%;
-		}    
+		}
 
 		.menu>li {
 			display: inline-block;
+			
 		}
-		
-		
+
+
 		.nav_text {
 			display: inline-block;
 			font-size: 20px;
@@ -96,18 +98,30 @@
 			width: 130px;
 			text-align: center;
 			line-height: 70px;
+			text-decoration: none;
+			color: black;
 		}
-		.dropdown{
+
+		.dropdown {
 			position: absolute;
 			width: 100%;
-			background-color: #333;
+			background-color: #FAF5B7;
 			text-align: center;
 			border-radius: 4px;
-			display: none;}
-		
+			list-style-type: none;
+			font-family: '微軟正黑體';
+			display: none;
+		}
 
-		.LOGO {position: absolute;
-			left:10%;top:0;
+		.dropdown.active {
+			display: block;
+		}
+
+
+		.LOGO {
+			position: absolute;
+			left: 10%;
+			top: 0;
 			width: 60px;
 			height: 60px;
 			background-image: url('img/LOGO.png');
@@ -141,7 +155,7 @@
 			height: 100%;
 			background-image: url(img/34215729_468455600252184_1592447768822022144_n.jpg);
 			background-size: cover;
-			background-position:center;
+			background-position: center;
 		}
 
 		.swiper-button-prev,
@@ -161,7 +175,7 @@
 		.news {
 			position: relative;
 			width: 80%;
-			padding-bottom:300px; 
+			padding-bottom: 300px;
 			/* height: 400px; */
 			background-color: #B9E8A9;
 			margin-left: 10%;
@@ -205,27 +219,33 @@
 			padding: 10px;
 			line-height: 10px;
 		}
-		.more1{position: absolute;
-			right:10%;bottom:30px;
-			width: 50px;height: 30px;
+
+		.more1 {
+			position: absolute;
+			right: 10%;
+			bottom: 30px;
+			width: 50px;
+			height: 30px;
 			background-color: #FAF5B7;
 			line-height: 30px;
 			text-align: center;
 		}
-		.product{
+
+		.product {
 			width: 80%;
 			/* height: 600px; */
-			padding-bottom:100px; 
+			padding-bottom: 100px;
 			/* margin-bottom:100px;  */
 			background-color: #B9E8A9;
 			margin-left: 10%;
 		}
-		.card-title{
+
+		.card-title {
 			font-family: "微軟正黑體";
 			text-align: center;
 		}
 
-		.idea{
+		.idea {
 			position: relative;
 			width: 80%;
 			/* height: 400px; */
@@ -233,19 +253,22 @@
 			margin-left: 10%;
 			padding-left: 10%;
 			padding-right: 10%;
-			padding-top:30px;
-			padding-bottom:50px; 
+			padding-top: 30px;
+			padding-bottom: 50px;
 		}
-		.idea_title{
+
+		.idea_title {
 			font-family: "微軟正黑體"
 		}
-		.idea_text{
+
+		.idea_text {
 			font-family: "微軟正黑體";
 			font-size: 20px;
-			color:black;
+			color: black;
 			text-decoration: none;
 		}
-		.des{
+
+		.des {
 			position: relative;
 			width: 80%;
 			/* height: 400px; */
@@ -254,87 +277,125 @@
 			padding-left: 10%;
 			padding-right: 10%;
 			padding-bottom: 50px;
-			
+
 		}
 
-		 .tab_btn{
+		.tab_btn {
 			/* position: absolute; */
-			
-            display: inline-block;
-            background-color: #F0E5AF;
-            padding: 20px 30px;
-			margin-right:1%; 
+			display: inline-block;
+			background-color: #F0E5AF;
+			padding: 20px 30px;
+			margin-right: 1%;
 			font-size: 20px;
 			margin-bottom: 30px;
-        }
+		}
 
-        .tab_content{
-            height: 100px;
-            width: 100%;
-            display: none;
+		.tab_content {
+			height: 100px;
+			width: 100%;
+			display: none;
 			font-family: '微軟正黑體'
-        }
+		}
 
-        .tab_content.active{
-            display: block;
-        }
+		.tab_content.active {
+			display: block;
+		}
 
-		.footer{position: relative;
+		.footer {
+			position: relative;
 			width: 80%;
 			/* height: 100px; */
 			background-color: #F0E5AF;
 			margin-left: 10%;
 			padding-left: 10%;
 			padding-right: 10%;
-			padding-top:20px;
+			padding-top: 20px;
 			font-family: '微軟正黑體'
 		}
-		.FB{position:absolute;
-			right:calc(10% + 80px); top:10px;
-			width: 30px;;height: 30px;
+
+		.FB {
+			position: absolute;
+			right: calc(10% + 80px);
+			top: 10px;
+			width: 30px;
+			;
+			height: 30px;
 			background-image: url(img/FB.PNG);
 			background-size: cover;
 		}
-		.ig{position:absolute;
-			right:calc(10% + 40px); top:10px;
-			width: 30px;;height: 30px;
+
+		.ig {
+			position: absolute;
+			right: calc(10% + 40px);
+			top: 10px;
+			width: 30px;
+			;
+			height: 30px;
 			background-image: url(img/IG.PNG);
 			background-size: cover;
 		}
-		.qrcode{position:absolute;
-			right:10%; top:10px;
-			width: 30px;;height: 30px;
+
+		.qrcode {
+			position: absolute;
+			right: 10%;
+			top: 10px;
+			width: 30px;
+			;
+			height: 30px;
 			background-image: url(img/lamit-qrcode.PNG);
 			background-size: cover;
 		}
+
+		
 	</style>
 </head>
 
 <body>
+	
 	<!-- NAV -->
 	<!-- <div class="all"> -->
-		
-		<div class="nav">
-				<div class="LOGO"></div>
-				<div class="nav_img">
-				<ul class="dropdown">
-						<li><a href="">最新消息</a></li>
-						<li><a href="">產品介紹</a></li>
-						<li><a href="">店家介紹</a></li>
-						<li><a href="">訂購說明</a></li>
-						<li><a href="">聯絡資訊</a></li>
-					</ul>
-				</div>
-			<ui class="menu">
-				<!-- <ui style="display: none;max-width: 600px"> -->
-					
-				<li class="nav_text"><a href="#newsL"><b>最新消息</li></a>
-				<li class="nav_text"><a href="#productL">產品介紹</li></a>
-				<li class="nav_text"><a href="#ideaL">店家介紹</li></a>
-				<li class="nav_text"><a href="#desL">訂購說明</li></a>
-				<li class="nav_text"><a href="#footerL">連絡資訊</b></a>
+	<div class="nav">
+		<div class="LOGO"></div>
+		<div class="nav_img"></div>
+		<ui class="menu">
+			<!-- <ui style="display: none;max-width: 600px"> -->
+			<li class="nav_text">
+				<a href="#newsL">
+					<b>最新消息</li>
+			</a>
+			<li class="nav_text">
+				<a href="#productL">產品介紹</li>
+			</a>
+			<li class="nav_text">
+				<a href="#ideaL">店家介紹</li>
+			</a>
+			<li class="nav_text">
+				<a href="#desL">訂購說明</li>
+			</a>
+			<li class="nav_text">
+				<a href="#footerL">連絡資訊</b>
+				</a>
+			</li>
+		</ui>
+	</div>
+	<div>
+			<ul id="mb-nav" class="dropdown">
+				<li>
+					<a href="">最新消息</a>
 				</li>
-			</ui>
+				<li>
+					<a href="">產品介紹</a>
+				</li>
+				<li>
+					<a href="">店家介紹</a>
+				</li>
+				<li>
+					<a href="">訂購說明</a>
+				</li>
+				<li>
+					<a href="">聯絡資訊</a>
+				</li>
+			</ul>
 		</div>
 	<!-- </div> -->
 	<!-- 輪播 -->
@@ -363,10 +424,11 @@
 		</div>
 	</div>
 
-		<!-- 最新消息 -->
+	<!-- 最新消息 -->
 	<div class="news">
-			<a name="newsL">
-					<H2 class="news_text">最新消息</H2>	</a>
+		<a name="newsL">
+			<H2 class="news_text">最新消息</H2>
+		</a>
 		<div class="news1">1/1 &nbsp 推出免運費優惠!</div>
 		<div class="news2">2/2 &nbsp [賀]網頁正式開張</div>
 		<div class="news3">3/3 &nbsp test123</div>
@@ -375,42 +437,44 @@
 
 	<!-- 產品介紹 -->
 	<div class="product">
-			<a name="productL"><H2 class="news_text">產品介紹</H2></a>
-	<div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                    <div class="card" >
-                            <img class="card-img-top" src="img/29541606_439442363153508_220877983140535992_n.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">黃檸檬糖霜磅蛋糕</h5>
-                              <p class="card-text"></p>
-                             
-                            </div>
-                          </div>
+		<a name="productL">
+			<H2 class="news_text">產品介紹</H2>
+		</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card">
+						<img class="card-img-top" src="img/29541606_439442363153508_220877983140535992_n.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">黃檸檬糖霜磅蛋糕</h5>
+							<p class="card-text"></p>
 
-            </div>
-            <div class="col-lg-4">
-                    <div class="card" >
-                            <img class="card-img-top" src="img/28685992_431487233949021_6432334750097403218_n.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">蘭姆酒香蔓越莓磅蛋糕</h5>
-                              <p class="card-text"></p>
-                              
-                            </div>
-                          </div>
-          
-            </div>
-            <div class="col-lg-4">
-                <div class="card" >
-                    <img class="card-img-top" src="img/31964041_457593121338432_8601241170716131328_n.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">抹茶蜜紅豆磅蛋糕</h5>
-                      <p class="card-text"></p>
-                      
-                    </div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4">
+					<div class="card">
+						<img class="card-img-top" src="img/28685992_431487233949021_6432334750097403218_n.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">蘭姆酒香蔓越莓磅蛋糕</h5>
+							<p class="card-text"></p>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4">
+					<div class="card">
+						<img class="card-img-top" src="img/31964041_457593121338432_8601241170716131328_n.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">抹茶蜜紅豆磅蛋糕</h5>
+							<p class="card-text"></p>
+
+						</div>
+					</div>
 				</div>
 			</div>
-       		 </div>
 		</div>
 	</div>
 
@@ -418,48 +482,63 @@
 	<div class="idea">
 		<div class="row">
 			<div class="col-md-12">
-				<a name="ideaL"><H2 class="idea_title"> <p>創業歷程</p></H2></a>
+				<a name="ideaL">
+					<H2 class="idea_title">
+						<p>創業歷程</p>
+					</H2>
+				</a>
 				<p class="idea_text">原本是接案設計師，但有時會碰到案子淡季，平時喜歡製作甜點，於是有了販售甜點的想法。</p>
-				<br><br>
+				<br>
+				<br>
 			</div>
 			<div class="col-md-12">
-				<H2 class="idea_title"><p>經營理念</p></H2>
-				<p class="idea_text">希望能夠提供中間價位，味覺比較敏感又負擔不起的高價位甜點的人，
-				所有甜點均不添加任何添加物，香草精與色素均不使用，使用純天然的食材與方法，甜點的外觀、色澤、包裝以及LOGO都屬於自己設計的。</p>
+				<H2 class="idea_title">
+					<p>經營理念</p>
+				</H2>
+				<p class="idea_text">希望能夠提供中間價位，味覺比較敏感又負擔不起的高價位甜點的人， 所有甜點均不添加任何添加物，香草精與色素均不使用，使用純天然的食材與方法，甜點的外觀、色澤、包裝以及LOGO都屬於自己設計的。
+				</p>
 			</div>
 		</div>
 	</div>
 
 	<!-- 訂購說明 -->
-	<div class="des"><a name="desL">
-		<b><div class="tab_btn" id="tab_btn_1">表單說明</div></a>
+	<div class="des">
+		<a name="desL">
+			<b>
+				<div class="tab_btn" id="tab_btn_1">表單說明</div>
+		</a>
 		<div class="tab_btn" id="tab_btn_2">寄送時間</div>
 		<div class="tab_btn" id="tab_btn_3">運送說明</div>
 		<div class="tab_btn" id="tab_btn_4">退換說明</div>
-		<div class="tab_btn" id="tab_btn_5">注意事項</div></b>
+		<div class="tab_btn" id="tab_btn_5">注意事項</div>
+		</b>
 
 		<div class="tab_content active" id="tab_content_1">愈購買產品請至google表單填寫，根據不同時節產品而推出不同產品，若不想錯過可加入@Line、FB或追蹤IG，若有新一期甜點將會在第一時間收到最新消息</div>
 		<div class="tab_content" id="tab_content_2">由於所有產品都是新鮮製作，接到訂單才會開始作業，請於5天前下單並匯款，若遇到宅配當日休假則順延一日。</div>
 		<div class="tab_content" id="tab_content_3">運送費用都是依照宅配公司進行調整，訂購越多一次運送越划算喔!滿3000則免運費優惠。</div>
 		<div class="tab_content" id="tab_content_4">商品一旦售出除非為產品瑕疵，否則一律不接受退換貨。</div>
 		<div class="tab_content" id="tab_content_5">為保證品質，所有品蟹收到後若無法於短時間內食用完畢請低溫冷藏，磅蛋糕會因為低溫而逐漸變硬，愈品嘗低溫保存後低溫的產品，再加熱至常溫即可食用；冷藏能夠保存五天，冷凍保存能夠保存兩周。</div>
-		</div>
+	</div>
 
-		<!-- footer -->
-		<footer class="footer"> 
-				<a name="footerL">電話:0912701500</a>
-			<br>email:w2883894@gmail.com
-			<a href="https://www.facebook.com/LamitWorkshop/" target="_blank"><div class="FB"></div></a>
-			<a href="https://www.instagram.com/lamit_workshop" target="_blank"><div class="ig"></div></a>
-			<div class="qrcode"></div>
-		</footer>
+	<!-- footer -->
+	<footer class="footer">
+		<a name="footerL">電話:0912701500</a>
+		<br>email:w2883894@gmail.com
+		<a href="https://www.facebook.com/LamitWorkshop/" target="_blank">
+			<div class="FB"></div>
+		</a>
+		<a href="https://www.instagram.com/lamit_workshop" target="_blank">
+			<div class="ig"></div>
+		</a>
+		<div class="qrcode"></div>
+	</footer>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	    crossorigin="anonymous"></script>
+	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-	    crossorigin="anonymous"></script>
+	 crossorigin="anonymous"></script>
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
@@ -479,50 +558,50 @@
 		});
 
 
-		$("#nav_img").click(function(){
-        $("#dropdown").addClass("active");
-        });
+		$(".nav_img").click(function () {
+			$(".dropdown").toggleClass("active");
+		});
 
 
-		$("#tab_btn_1").click(function(){
-            $("#tab_content_1").addClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").removeClass("active");
+		$("#tab_btn_1").click(function () {
+			$("#tab_content_1").addClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").removeClass("active");
 			$("#tab_content_4").removeClass("active");
 			$("#tab_content_5").removeClass("active");
-        });
+		});
 
-        $("#tab_btn_2").click(function(){
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").addClass("active");
-            $("#tab_content_3").removeClass("active");
+		$("#tab_btn_2").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").addClass("active");
+			$("#tab_content_3").removeClass("active");
 			$("#tab_content_4").removeClass("active");
 			$("#tab_content_5").removeClass("active");
-        });
+		});
 
-        $("#tab_btn_3").click(function(){
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").addClass("active");
+		$("#tab_btn_3").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").addClass("active");
 			$("#tab_content_4").removeClass("active");
 			$("#tab_content_5").removeClass("active");
-        });
+		});
 
-		$("#tab_btn_4").click(function(){
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").removeClass("active");
+		$("#tab_btn_4").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").removeClass("active");
 			$("#tab_content_4").addClass("active");
 			$("#tab_content_5").removeClass("active");
-        });
+		});
 
-		$("#tab_btn_5").click(function(){
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").removeClass("active");
+		$("#tab_btn_5").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").removeClass("active");
 			$("#tab_content_4").removeClass("active");
 			$("#tab_content_5").addClass("active");
-        });
+		});
 	</script>
 
 </body>
